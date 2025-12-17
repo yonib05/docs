@@ -88,5 +88,5 @@ If you encounter the error `ModuleNotFoundError: No module named 'mistralai'`, t
 
 ## References
 
-- [API Reference](../../../api-reference/models.md)
+- [API Reference](../../../api-reference/models/index.md)
 - [Mistral AI Documentation](https://docs.mistral.ai/)

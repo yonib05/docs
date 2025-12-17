@@ -110,6 +110,6 @@ print(f"Rating: {result.rating}")
 
 ## References
 
-- [API](../../../api-reference/models.md)
+- [API](../../../api-reference/models/index.md)
 - [Anthropic](https://docs.anthropic.com/en/home)
 

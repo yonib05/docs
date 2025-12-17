@@ -272,4 +272,4 @@ Utilizing both [agents as a tool](../multi-agent/agents-as-tools.md) and [tool s
 
 - Learn about [Async Iterators](async-iterators.md) for asynchronous streaming
 - Explore [Callback Handlers](callback-handlers.md) for synchronous event processing
-- See the [Agent API Reference](../../../api-reference/agent.md) for complete method documentation
+- See the [Agent API Reference](../../../api-reference/agent/index.md) for complete method documentation

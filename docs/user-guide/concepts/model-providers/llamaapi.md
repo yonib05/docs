@@ -109,5 +109,5 @@ print(f"Rating: {result.rating}")
 
 ## References
 
-- [API](../../../api-reference/models.md)
+- [API](../../../api-reference/models/index.md)
 - [LlamaAPI](https://llama.developer.meta.com/docs/)

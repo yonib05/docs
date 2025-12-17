@@ -224,7 +224,7 @@ response = agent([
 
 ## References
 
-- [API](../../../api-reference/models.md)
+- [API](../../../api-reference/models/index.md)
 - [Google Gemini](https://ai.google.dev/api)
 - [Google GenAI SDK documentation](https://googleapis.github.io/python-genai/)
 - [Google AI Studio](https://aistudio.google.com/)

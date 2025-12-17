@@ -196,7 +196,7 @@ print(f"\n{result}")
 
 ## Custom Node Types
 
-You can create custom node types by extending [`MultiAgentBase`](../../../api-reference/multiagent.md#strands.multiagent.base.MultiAgentBase) to implement deterministic business logic, data processing pipelines, and hybrid workflows.
+You can create custom node types by extending [`MultiAgentBase`](../../../api-reference/multiagent/index.md#strands.multiagent.base.MultiAgentBase) to implement deterministic business logic, data processing pipelines, and hybrid workflows.
 
 ```python
 from strands.multiagent.base import MultiAgentBase, NodeResult, Status, MultiAgentResult

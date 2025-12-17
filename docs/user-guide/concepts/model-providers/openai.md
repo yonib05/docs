@@ -163,5 +163,5 @@ OpenAI models support structured output through their native tool calling capabi
 
 ## References
 
-- [API](../../../api-reference/models.md)
+- [API](../../../api-reference/models/index.md)
 - [OpenAI](https://platform.openai.com/docs/overview)
