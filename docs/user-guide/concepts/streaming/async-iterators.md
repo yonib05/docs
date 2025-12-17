@@ -8,7 +8,7 @@ For a complete list of available events including text generation, tool usage, l
 
 === "Python"
 
-    Python uses the [`stream_async`](../../../api-reference/agent.md#strands.agent.agent.Agent.stream_async), which is a streaming counterpart to the [`invoke_async`](../../../api-reference/agent.md#strands.agent.agent.Agent.invoke_async) method, for asynchronous streaming. This is ideal for frameworks like FastAPI, aiohttp, or Django Channels.
+    Python uses the [`stream_async`](../../../api-reference/agent/agent.md#strands.agent.agent.Agent.stream_async), which is a streaming counterpart to the [`invoke_async`](../../../api-reference/agent/agent.md#strands.agent.agent.Agent.invoke_async) method, for asynchronous streaming. This is ideal for frameworks like FastAPI, aiohttp, or Django Channels.
 
     > **Note**: Python also supports synchronous event handling via [callback handlers](./callback-handlers.md).
 

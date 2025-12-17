@@ -13,7 +13,7 @@ Metrics are essential for understanding agent performance, optimizing behavior, 
     - **Tool usage**: Call counts, success rates, and execution times for each tool
     - **Event loop cycles**: Number of reasoning cycles and their durations
 
-    All these metrics are accessible through the [`AgentResult`](../../api-reference/agent.md#strands.agent.agent_result.AgentResult) object that's returned whenever you invoke an agent:
+    All these metrics are accessible through the [`AgentResult`](../../api-reference/agent/agent_result.md#strands.agent.agent_result.AgentResult) object that's returned whenever you invoke an agent:
 
     ```python
     from strands import Agent

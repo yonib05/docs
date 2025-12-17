@@ -237,7 +237,7 @@ Function tools may also be defined async. Strands will invoke all async tools co
 
 ### ToolContext
 
-Tools can access their execution context to interact with the invoking agent, current tool use data, and invocation state. The [`ToolContext`](../../../api-reference/types.md#strands.types.tools.ToolContext) provides this access:
+Tools can access their execution context to interact with the invoking agent, current tool use data, and invocation state. The [`ToolContext`](../../../api-reference/types/tools.md#strands.types.tools.ToolContext) provides this access:
 
 === "Python"
 
@@ -470,13 +470,13 @@ You can define multiple tools within the same class to create a cohesive set of 
 
 ## Tool Response Format
 
-Tools can return responses in various formats using the [`ToolResult`](../../../api-reference/types.md#strands.types.tools.ToolResult) structure. This structure provides flexibility for returning different types of content while maintaining a consistent interface.
+Tools can return responses in various formats using the [`ToolResult`](../../../api-reference/types/tools.md#strands.types.tools.ToolResult) structure. This structure provides flexibility for returning different types of content while maintaining a consistent interface.
 
 #### ToolResult Structure
 
 === "Python"
 
-    The [`ToolResult`](../../../api-reference/types.md#strands.types.tools.ToolResult) dictionary has the following structure:
+    The [`ToolResult`](../../../api-reference/types/tools.md#strands.types.tools.ToolResult) dictionary has the following structure:
 
     ```python
     {
@@ -582,10 +582,10 @@ The `content` field is a list of content blocks, where each block can contain:
 
 === "Python"
 
-    When using the [`@tool`](../../../api-reference/tools.md#strands.tools.decorator.tool) decorator, your function's return value is automatically converted to a proper [`ToolResult`](../../../api-reference/types.md#strands.types.tools.ToolResult):
+    When using the [`@tool`](../../../api-reference/tools.md#strands.tools.decorator.tool) decorator, your function's return value is automatically converted to a proper [`ToolResult`](../../../api-reference/types/tools.md#strands.types.tools.ToolResult):
 
     1. If you return a string or other simple value, it's wrapped as `{"text": str(result)}`
-    2. If you return a dictionary with the proper [`ToolResult`](../../../api-reference/types.md#strands.types.tools.ToolResult) structure, it's used directly
+    2. If you return a dictionary with the proper [`ToolResult`](../../../api-reference/types/tools.md#strands.types.tools.ToolResult) structure, it's used directly
     3. If an exception occurs, it's converted to an error response
 
 === "TypeScript"

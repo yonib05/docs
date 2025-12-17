@@ -23,7 +23,7 @@ All streaming methods yield the same set of events:
     - **`event`**: Raw event from the model stream
     - **`force_stop`**: True if the event loop was forced to stop
         - **`force_stop_reason`**: Reason for forced stop
-    - **`result`**: The final [`AgentResult`](../../../api-reference/agent.md#strands.agent.agent_result.AgentResult)
+    - **`result`**: The final [`AgentResult`](../../../api-reference/agent/agent_result.md#strands.agent.agent_result.AgentResult)
 
 === "TypeScript"
 
@@ -71,7 +71,7 @@ All streaming methods yield the same set of events:
         - **`name`**: Name of the tool
         - **`input`**: Tool input parameters (accumulated as streaming occurs)
     - **`tool_stream_event`**: Information about [an event streamed from a tool](../tools/custom-tools.md#tool-streaming), including:
-        - **`tool_use`**: The [`ToolUse`](../../../api-reference/types.md#strands.types.tools.ToolUse) for the tool that streamed the event
+        - **`tool_use`**: The [`ToolUse`](../../../api-reference/types/tools.md#strands.types.tools.ToolUse) for the tool that streamed the event
         - **`data`**: The data streamed from the tool
 === "TypeScript"
     - **`BeforeToolsEvent`**: Information about the current tool being used, including:

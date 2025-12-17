@@ -109,7 +109,7 @@ If you get context overflow errors:
 
 ### Structured Output
 
-llama.cpp models support structured output through native JSON schema validation. When you use [`Agent.structured_output()`](../../../api-reference/agent.md#strands.agent.agent.Agent.structured_output), the SDK uses llama.cpp's json_schema parameter to constrain output:
+llama.cpp models support structured output through native JSON schema validation. When you use [`Agent.structured_output()`](../../../api-reference/agent/agent.md#strands.agent.agent.Agent.structured_output), the SDK uses llama.cpp's json_schema parameter to constrain output:
 
 ```python
 from pydantic import BaseModel, Field

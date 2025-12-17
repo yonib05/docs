@@ -129,7 +129,7 @@ except ModelThrottledException as e:
 
 ### Structured Output
 
-Gemini models support structured output through their native JSON schema capabilities. When you use [`Agent.structured_output()`](../../../api-reference/agent.md#strands.agent.agent.Agent.structured_output), the Strands SDK automatically converts your Pydantic models to Gemini's JSON schema format.
+Gemini models support structured output through their native JSON schema capabilities. When you use [`Agent.structured_output()`](../../../api-reference/agent/agent.md#strands.agent.agent.Agent.structured_output), the Strands SDK automatically converts your Pydantic models to Gemini's JSON schema format.
 
 ```python
 from pydantic import BaseModel, Field
