@@ -31,7 +31,7 @@ Metrics are essential for understanding agent performance, optimizing behavior, 
     print(f"Tools used: {list(result.metrics.tool_metrics.keys())}")
     ```
 
-    The `metrics` attribute of `AgentResult` (an instance of [`EventLoopMetrics`](../../api-reference/telemetry/index.md#strands.telemetry.metrics)) provides comprehensive performance metric data about the agent's execution, while other attributes like `stop_reason`, `message`, and `state` provide context about the agent's response. This document explains the metrics available in the agent's response and how to interpret them.
+    The `metrics` attribute of `AgentResult` (an instance of [`EventLoopMetrics`](../../api-reference/telemetry/metrics.md#strands.telemetry.metrics)) provides comprehensive performance metric data about the agent's execution, while other attributes like `stop_reason`, `message`, and `state` provide context about the agent's response. This document explains the metrics available in the agent's response and how to interpret them.
 
 === "TypeScript"
 
@@ -73,7 +73,7 @@ Metrics are essential for understanding agent performance, optimizing behavior, 
 
 === "Python"
 
-    The [`EventLoopMetrics`](../../api-reference/telemetry/index.md#strands.telemetry.metrics.EventLoopMetrics) class aggregates metrics across the entire event loop execution cycle, providing a complete picture of your agent's performance. It tracks cycle counts, tool usage, execution durations, and token consumption across all model invocations.
+    The [`EventLoopMetrics`](../../api-reference/telemetry/metrics.md#strands.telemetry.metrics.EventLoopMetrics) class aggregates metrics across the entire event loop execution cycle, providing a complete picture of your agent's performance. It tracks cycle counts, tool usage, execution durations, and token consumption across all model invocations.
 
     Key metrics include:
 
@@ -83,7 +83,7 @@ Metrics are essential for understanding agent performance, optimizing behavior, 
     - **Accumulated metrics**: Latency measurements in milliseconds for all model requests
     - **Execution traces**: Detailed trace information for performance analysis
 
-    For a complete list of attributes and their types, see the [`EventLoopMetrics` API reference](../../api-reference/telemetry/index.md#strands.telemetry.metrics.EventLoopMetrics).
+    For a complete list of attributes and their types, see the [`EventLoopMetrics` API reference](../../api-reference/telemetry/metrics.md#strands.telemetry.metrics.EventLoopMetrics).
 
 {{ ts_not_supported_code() }}
 
@@ -91,7 +91,7 @@ Metrics are essential for understanding agent performance, optimizing behavior, 
 
 === "Python"
 
-    For each tool used by the agent, detailed metrics are collected in the `tool_metrics` dictionary. Each entry is an instance of [`ToolMetrics`](../../api-reference/telemetry/index.md#strands.telemetry.metrics.ToolMetrics) that tracks the tool's performance throughout the agent's execution.
+    For each tool used by the agent, detailed metrics are collected in the `tool_metrics` dictionary. Each entry is an instance of [`ToolMetrics`](../../api-reference/telemetry/metrics.md#strands.telemetry.metrics.ToolMetrics) that tracks the tool's performance throughout the agent's execution.
 
     Tool metrics provide insights into:
 
@@ -100,7 +100,7 @@ Metrics are essential for understanding agent performance, optimizing behavior, 
     - **Success rate**: Percentage of successful tool invocations
     - **Tool reference**: Information about the specific tool being tracked
 
-    These metrics help you identify performance bottlenecks, tools with high error rates, and opportunities for optimization. For complete details on all available properties, see the [`ToolMetrics` API reference](../../api-reference/telemetry/index.md#strands.telemetry.metrics.ToolMetrics).
+    These metrics help you identify performance bottlenecks, tools with high error rates, and opportunities for optimization. For complete details on all available properties, see the [`ToolMetrics` API reference](../../api-reference/telemetry/metrics.md#strands.telemetry.metrics.ToolMetrics).
 
 {{ ts_not_supported_code() }}
 
