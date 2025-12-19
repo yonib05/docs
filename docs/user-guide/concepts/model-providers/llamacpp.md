@@ -214,7 +214,7 @@ response = agent([image_message])
 
 ## References
 
-- [API](../../../api-reference/models/index.md)
+- [API](../../../api-reference/models/model.md)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
 - [llama.cpp Server Documentation](https://github.com/ggml-org/llama.cpp/tree/master/tools/server)
 - [GGUF Models on Hugging Face](https://huggingface.co/models?search=gguf)

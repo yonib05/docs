@@ -178,5 +178,5 @@ print(f"Rating: {result.rating}")
 
 ## References
 
-- [API](../../../api-reference/models/index.md)
+- [API](../../../api-reference/models/model.md)
 - [LiteLLM](https://docs.litellm.ai/docs/)

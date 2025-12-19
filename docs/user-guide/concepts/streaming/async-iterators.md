@@ -35,7 +35,7 @@ For a complete list of available events including text generation, tool usage, l
 
 === "TypeScript"
 
-    TypeScript uses the [`stream`](../../../api-reference/agent/index.md) method for streaming, which is async by default. This is ideal for frameworks like Express.js or NestJS.
+    TypeScript uses the [`stream`](../../../api-reference/agent/agent.md) method for streaming, which is async by default. This is ideal for frameworks like Express.js or NestJS.
 
     ```typescript
     --8<-- "user-guide/concepts/streaming/async-iterators.ts:basic_usage"

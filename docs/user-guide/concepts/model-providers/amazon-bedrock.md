@@ -361,7 +361,7 @@ Some Bedrock models support multimodal inputs (Documents, Images, etc.). Here's 
     --8<-- "user-guide/concepts/model-providers/amazon-bedrock.ts:multimodal_full"
     ```
 
-For a complete list of input types, please refer to the [API Reference](../../../api-reference/types/index.md).
+For a complete list of input types, please refer to the [API Reference](../../../api-reference/types/content.md).
 
 ### Guardrails
 
