@@ -260,11 +260,15 @@ plugins:
           - community/**/*.md
         Examples:
           - examples/**/*.md
-        API Reference:
-          - api-reference/*.md
+        Python API:
+          - docs/api-reference/**/*.md
+        TypeScript API:
+          - docs/api-reference/typescript/*.html
+
 
 hooks:
   - build-ts-docs.py
+  - build-py-docs.py
 extra:
   social:
     - icon: fontawesome/brands/github
