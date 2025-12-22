@@ -266,7 +266,7 @@ plugins:
         Examples:
           - examples/**/*.md
         Python API:
-          - docs/api-reference/**/*.md
+          - docs/api-reference/python/**/*.md
         TypeScript API:
           - docs/api-reference/typescript/*.html
 

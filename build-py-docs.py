@@ -8,7 +8,7 @@ from pathlib import Path
 
 # Configuration
 REPO_URL = "https://github.com/strands-agents/sdk-python.git"
-OUTPUT_DIR = "docs/api-reference"
+OUTPUT_DIR = "docs/api-reference/python"
 TEMP_DIR = Path('temp_python_sdk')
 
 
