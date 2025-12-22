@@ -1,9 +1,9 @@
 import os
+import re
 import sys
 import subprocess
 import shutil
 import importlib
-import re
 from pathlib import Path
 
 # Configuration
@@ -126,17 +126,26 @@ def on_pre_build(config):
     shutil.rmtree(TEMP_DIR, ignore_errors=True)
     try:
         subprocess.run(['git', 'clone', REPO_URL, str(TEMP_DIR)], check=True, capture_output=True)
-        print("Repository cloned successfully")
+        print("✓ Python Repository cloned successfully")
     except subprocess.CalledProcessError as e:
         print(f"Failed to clone repository: {e}")
         return
+
+    # Install the package
+    try:
+        subprocess.run(['pip', 'install', f'./{TEMP_DIR}[all,bidi-all]'], check=True, capture_output=True,
+                       cwd=os.getcwd())
+        print("✓ Python Package installed successfully")
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to install package: {e}")
+        # Continue anyway - we can still generate docs with sys.path
 
     # Setup Python path
     sdk_src_path = str(TEMP_DIR / 'src')
     sys.path.insert(0, sdk_src_path)
 
     try:
-        print("Generating API docs...")
+        print("Generating Python API docs...")
 
         # Discover all modules
         modules = discover_modules(TEMP_DIR / 'src/strands')
@@ -222,7 +231,7 @@ def on_pre_build(config):
                 item['Python API'] = nav_items
                 break
 
-        print("Updated Python API nav menu")
+        print("✓ Updated Python API nav menu")
 
     finally:
         # Cleanup
