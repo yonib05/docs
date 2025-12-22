@@ -97,4 +97,4 @@ Make sure your Google AI API key is properly set in `client_config` or as the `G
 
 - [Gemini Live API](https://ai.google.dev/gemini-api/docs/live)
 - [Gemini API Reference](https://googleapis.github.io/python-genai/genai.html#)
-- [Provider API Reference](../../../../../api-reference/experimental/bidi/models/model.md#strands.experimental.bidi.models.gemini_live.BidiGeminiLiveModel)
+- [Provider API Reference](../../../../../api-reference/experimental/bidi/models/gemini_live.md#strands.experimental.bidi.models.gemini_live.BidiGeminiLiveModel)

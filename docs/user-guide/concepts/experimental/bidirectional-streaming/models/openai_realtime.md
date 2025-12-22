@@ -97,4 +97,4 @@ Ensure your OpenAI API key is properly configured. Set the `OPENAI_API_KEY` envi
 
 - [OpenAI Realtime API](https://platform.openai.com/docs/guides/realtime)
 - [OpenAI API Reference](https://platform.openai.com/docs/api-reference/realtime)
-- [Provider API Reference](../../../../../api-reference/experimental/bidi/models/model.md#strands.experimental.bidi.models.openai_realtime.BidiOpenAIRealtimeModel)
+- [Provider API Reference](../../../../../api-reference/experimental/bidi/models/openai_realtime.md#strands.experimental.bidi.models.openai_realtime.BidiOpenAIRealtimeModel)

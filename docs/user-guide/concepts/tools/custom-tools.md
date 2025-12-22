@@ -6,9 +6,9 @@ There are multiple approaches to defining custom tools in Strands, with differen
 
     Python supports three approaches to defining tools:
 
-    * **Python functions with the [`@tool`](../../../api-reference/tools/tools.md#strands.tools.decorator.tool) decorator**: Transform regular Python functions into tools by adding a simple decorator. This approach leverages Python's docstrings and type hints to automatically generate tool specifications.
+    * **Python functions with the [`@tool`](../../../api-reference/tools/decorator.md#strands.tools.decorator.tool) decorator**: Transform regular Python functions into tools by adding a simple decorator. This approach leverages Python's docstrings and type hints to automatically generate tool specifications.
 
-    * **Class-based tools with the [`@tool`](../../../api-reference/tools/tools.md#strands.tools.decorator.tool) decorator**: Create tools within classes to maintain state and leverage object-oriented programming patterns.
+    * **Class-based tools with the [`@tool`](../../../api-reference/tools/decorator.md#strands.tools.decorator.tool) decorator**: Create tools within classes to maintain state and leverage object-oriented programming patterns.
 
     * **Python modules following a specific format**: Define tools by creating Python modules that contain a tool specification and a matching function. This approach gives you more control over the tool's definition and is useful for dependency-free implementations of tools.
 
@@ -451,7 +451,7 @@ You can define multiple tools within the same class to create a cohesive set of 
     )
     ```
 
-    When you use the [`@tool`](../../../api-reference/tools/tools.md#strands.tools.decorator.tool) decorator on a class method, the method becomes bound to the class instance when instantiated. This means the tool function has access to the instance's attributes and can maintain state between invocations.
+    When you use the [`@tool`](../../../api-reference/tools/decorator.md#strands.tools.decorator.tool) decorator on a class method, the method becomes bound to the class instance when instantiated. This means the tool function has access to the instance's attributes and can maintain state between invocations.
 
 
 
@@ -582,7 +582,7 @@ The `content` field is a list of content blocks, where each block can contain:
 
 === "Python"
 
-    When using the [`@tool`](../../../api-reference/tools/tools.md#strands.tools.decorator.tool) decorator, your function's return value is automatically converted to a proper [`ToolResult`](../../../api-reference/types/tools.md#strands.types.tools.ToolResult):
+    When using the [`@tool`](../../../api-reference/tools/decorator.md#strands.tools.decorator.tool) decorator, your function's return value is automatically converted to a proper [`ToolResult`](../../../api-reference/types/tools.md#strands.types.tools.ToolResult):
 
     1. If you return a string or other simple value, it's wrapped as `{"text": str(result)}`
     2. If you return a dictionary with the proper [`ToolResult`](../../../api-reference/types/tools.md#strands.types.tools.ToolResult) structure, it's used directly

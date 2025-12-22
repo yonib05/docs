@@ -133,4 +133,4 @@ As a reminder, Nova Sonic is only available in us-east-1, eu-north-1, and ap-nor
 
 - [Nova Sonic](https://docs.aws.amazon.com/nova/latest/userguide/speech.html)
 - [Experimental Bedrock Client](https://github.com/awslabs/aws-sdk-python/tree/develop/clients/aws-sdk-bedrock-runtime)
-- [Provider API Reference](../../../../../api-reference/experimental/bidi/models/model.md#strands.experimental.bidi.models.nova_sonic.BidiNovaSonicModel)
+- [Provider API Reference](../../../../../api-reference/experimental/bidi/models/nova_sonic.md#strands.experimental.bidi.models.nova_sonic.BidiNovaSonicModel)
