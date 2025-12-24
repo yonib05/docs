@@ -37,7 +37,7 @@ jobs:
       - name: Set PR & REPO Env
         if: github.event_name == 'pull_request'
         run: |
-          echo "DOC_REPO=${{ github.repository }} >> $GITHUB_ENV
+          echo "DOC_REPO=${{ github.repository }}" >> $GITHUB_ENV
           echo "DOC_REPO_PR_NUMBER=${{ github.event.number }}" >> $GITHUB_ENV
       - name: Build docs
         run: |
