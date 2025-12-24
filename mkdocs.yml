@@ -239,6 +239,7 @@ exclude_docs: |
   node_modules
   .venv
   _dependencies
+  !.lycheeignore
 
 plugins:
   - search
